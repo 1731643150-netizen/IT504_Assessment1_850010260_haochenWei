@@ -1,0 +1,161 @@
+@page
+
+@{
+    ViewData["Title"] = "Services and Portfolio";
+}
+
+<section class="page-heading dark-heading">
+    <div class="container">
+
+        <p class="small-title light-text">
+            Services and portfolio
+        </p>
+
+        <h1>Services for independent businesses</h1>
+
+        <p class="large-text">
+            Choose one service or combine several services
+            for your project.
+        </p>
+
+    </div>
+</section>
+
+<section class="section container">
+
+    <h2>Our services</h2>
+
+    <div class="service-list">
+
+        <article class="service">
+            <div>
+                <h3>Photography</h3>
+
+                <p>
+                    Brand photographs, portraits,
+                    product images and workspace photography.
+                </p>
+            </div>
+
+            <a asp-page="/Contact"
+               asp-route-service="Photography">
+                Ask about photography
+            </a>
+        </article>
+
+        <article class="service">
+            <div>
+                <h3>Graphic Design</h3>
+
+                <p>
+                    Social media graphics, presentations,
+                    posters and printed material.
+                </p>
+            </div>
+
+            <a asp-page="/Contact"
+               asp-route-service="Graphic Design">
+                Ask about graphic design
+            </a>
+        </article>
+
+        <article class="service">
+            <div>
+                <h3>Consulting</h3>
+
+                <p>
+                    Practical advice about content,
+                    communication and visual direction.
+                </p>
+            </div>
+
+            <a asp-page="/Contact"
+               asp-route-service="Consulting">
+                Ask about consulting
+            </a>
+        </article>
+
+        <article class="service">
+            <div>
+                <h3>Personal Branding</h3>
+
+                <p>
+                    A clear message and consistent visual
+                    style for independent professionals.
+                </p>
+            </div>
+
+            <a asp-page="/Contact"
+               asp-route-service="Personal Branding">
+                Ask about personal branding
+            </a>
+        </article>
+
+    </div>
+</section>
+
+<section class="section light-section">
+
+    <div class="container">
+        <div class="section-title">
+
+            <p class="small-title">Portfolio</p>
+            <h2>Selected work</h2>
+
+            <p>
+                These examples show the type of work
+                Harakeke Studio can provide.
+            </p>
+
+        </div>
+
+        <div class="portfolio-grid">
+
+            <figure class="portfolio-card">
+                <img src="~/images/portfolio1.jpg"
+                     alt="Example of a brand photography project" />
+
+                <figcaption>
+                    <h3>Natural Practice</h3>
+                    <p>Brand photography</p>
+                </figcaption>
+            </figure>
+
+            <figure class="portfolio-card">
+                <img src="~/images/portfolio2.jpg"
+                     alt="Example of a graphic design project" />
+
+                <figcaption>
+                    <h3>Local Makers</h3>
+                    <p>Graphic design</p>
+                </figcaption>
+            </figure>
+
+            <figure class="portfolio-card">
+                <img src="~/images/portfolio3.jpg"
+                     alt="Example of a personal branding project" />
+
+                <figcaption>
+                    <h3>Independent Voice</h3>
+                    <p>Personal branding</p>
+                </figcaption>
+            </figure>
+
+        </div>
+    </div>
+</section>
+
+<section class="contact-banner">
+    <div class="container banner-content">
+
+        <div>
+            <h2>Not sure which service to choose?</h2>
+            <p>Describe your project and we can suggest a service.</p>
+        </div>
+
+        <a class="button gold-button" asp-page="/Contact">
+            Contact us
+        </a>
+
+    </div>
+</section>
