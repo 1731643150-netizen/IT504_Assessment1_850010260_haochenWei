@@ -1,0 +1,233 @@
+/* Basic page style */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+
+/* Container */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* Header */
+
+header {
+    background-color: #245b4a;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #ffffff;
+    color: #245b4a;
+    border-radius: 4px;
+}
+
+
+/* Home hero */
+
+.hero {
+    background-color: #e7f0ec;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+
+/* Buttons */
+
+.button,
+button {
+    display: inline-block;
+    background-color: #245b4a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+    background-color: #183f34;
+}
+
+
+/* Page heading */
+
+.page-header {
+    background-color: #e7f0ec;
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+/* Main section */
+
+.section {
+    padding: 50px 0;
+}
+
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #dddddd;
+    padding: 25px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.card h3 {
+    color: #245b4a;
+}
+
+
+/* Contact section */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 20px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #245b4a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* Tablet and mobile */
+
+@media (max-width: 768px) {
+
+    header {
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* Small mobile */
+
+@media (max-width: 480px) {
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+}
